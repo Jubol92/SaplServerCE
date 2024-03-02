@@ -1,0 +1,22 @@
+server:
+  port: ${PORT:8080}
+spring:
+  mustache.check-template-location: false
+  output.ansi.enabled: DETECT
+  profiles.active: @spring.profile.from.maven@
+  h2:
+    console.enabled: false
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:file:~/sapl/db
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    open-in-view: false
+
+vaadin:
+  whitelisted-packages: com.vaadin,org.vaadin,dev.hilla,io.sapl
+
+logging.level:
+  "[org.atmosphere]": WARN
+  web: INFO

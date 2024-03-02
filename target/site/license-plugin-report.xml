@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<licensePluginReport goal="CHECK" timestamp="1708265161367">
+    <module artifactId="sapl-server" groupId="io.sapl" version="3.0.0-SNAPSHOT"/>
+    <files>
+        <file path="formatter.xml" result="PRESENT"/>
+        <file path="pom.xml" result="PRESENT"/>
+    </files>
+</licensePluginReport>
